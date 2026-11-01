@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlacementGenie - AI-Powered Campus Placement Preparation Platform. 20-Day Placement Planner, Aptitude Practice, Technical & HR Interviews, Resume Assistant and Integrated AI Chatbot.">
+  <title>PlacementGenie - Smart Campus Placement Preparation & AI Assistant</title>
+  
+  <!-- Main External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====================================================================== -->
+  <!-- 1. STICKY TOP NAVIGATION BAR                                           -->
+  <!-- ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      
+      <!-- Brand Logo & Tagline -->
+      <a href="#home" class="brand-logo" aria-label="PlacementGenie Home">
+        <div class="logo-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">PlacementGenie</span>
+          <span class="brand-tagline">AI Placement Assistant</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#planner" class="nav-link">20-Day Plan</a></li>
+          <li><a href="#aptitude" class="nav-link">Aptitude Lab</a></li>
+          <li><a href="#technical" class="nav-link">Technical Prep</a></li>
+          <li><a href="#hr-interview" class="nav-link">HR &amp; Soft Skills</a></li>
+          <li><a href="#resume" class="nav-link">Resume Booster</a></li>
+          <li><a href="#tracker" class="nav-link">Readiness Tracker</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action: Open AI Assistant & Mobile Hamburger -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-assistant-trigger" id="header-chat-btn" aria-label="Open AI Placement Assistant">
+          <span class="assistant-sparkle" aria-hidden="true">✨</span>
+          <span>Ask Genie</span>
+        </button>
+
+        <button type="button" class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Website Content -->
+  <main id="main-content">
+
+    <!-- ==================================================================== -->
+    <!-- 2. HERO SECTION & PLATFORM OVERVIEW                                  -->
+    <!-- ==================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>College Campus Placement Readiness Suite 2026</span>
+        </div>
+
+        <h1 class="hero-title">
+          Crack Your Dream Campus Placement with <span class="gradient-text">PlacementGenie</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Your all-in-one preparation ecosystem: Master quantitative aptitude, core computer science, HR interviews, ATS resume optimization, and consult your intelligent on-demand AI placement mentor.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#planner" class="btn btn-primary">
+            <span>Start 20-Day Roadmap</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cta-arrow"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <button type="button" class="btn btn-outline" id="hero-open-chat-btn">
+            <span aria-hidden="true">🧞‍♂️</span>
+            <span>Talk to AI Assistant</span>
+          </button>
+        </div>
+
+        <!-- Quick Platform Stats Highlights -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">📅</div>
+            <div class="stat-value">20 Days</div>
+            <div class="stat-label">Structured Syllabus</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">🧠</div>
+            <div class="stat-value">300+</div>
+            <div class="stat-label">Aptitude &amp; Tech MCQs</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">🎯</div>
+            <div class="stat-value">STAR Method</div>
+            <div class="stat-label">HR Model Answers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">⚡</div>
+            <div class="stat-value">100% Free</div>
+            <div class="stat-label">Client-Side &amp; Private</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 3. ABOUT SECTION: WHY PLACEMENTGENIE?                                -->
+    <!-- ==================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">About The Platform</span>
+          <h2 class="section-title">Designed Specifically for Engineering &amp; Degree Students</h2>
+          <p class="section-desc">
+            Campus recruitment drives test you across multiple dimensions: Aptitude, Coding, CS Fundamentals, Communication, and Behavioral fit. PlacementGenie unites all preparation pillars in a single focused web platform.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🗓️</div>
+            <h3 class="feature-title">20-Day Action Roadmap</h3>
+            <p class="feature-desc">Never wonder what to study next. Follow a battle-tested daily schedule covering Aptitude, Data Structures, Core CS, and HR rounds.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3 class="feature-title">Aptitude Practice Lab</h3>
+            <p class="feature-desc">Solve real placement-level MCQs in Quantitative, Logical, and Verbal topics with real-time scoring and instant step-by-step explanations.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">💻</div>
+            <h3 class="feature-title">Core Technical Hub</h3>
+            <p class="feature-desc">Revise top interview questions across DBMS, Operating Systems, Computer Networks, OOP, DSA, and Web Development.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🤝</div>
+            <h3 class="feature-title">HR &amp; Behavioral Mastery</h3>
+            <p class="feature-desc">Learn the proven STAR technique (Situation, Task, Action, Result) with high-impact responses to tough interview questions.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📄</div>
+            <h3 class="feature-title">ATS Resume Checklist</h3>
+            <p class="feature-desc">Audit your resume with an interactive 10-point checklist, action-verb enhancer, and formatting tips to pass automated company screenings.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🤖</div>
+            <h3 class="feature-title">Integrated Floating AI</h3>
+            <p class="feature-desc">Have a doubt? Click the floating Genie assistant from any page to get instant answers, custom timetables, and personalized interview practice.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 4. MODULE 1: 20-DAY PLACEMENT ROADMAP                                -->
+    <!-- ==================================================================== -->
+    <section class="section planner-section" id="planner">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Module 1</span>
+          <h2 class="section-title">The 20-Day Placement Sprint</h2>
+          <p class="section-desc">A step-by-step day-wise curriculum. Check off days as you complete them to automatically update your Readiness Score.</p>
+        </div>
+
+        <!-- Filter Tabs for the 4 Weeks -->
+        <div class="planner-filter-tabs" role="tablist">
+          <button type="button" class="tab-btn active" data-week="all" role="tab" aria-selected="true">All 20 Days</button>
+          <button type="button" class="tab-btn" data-week="1" role="tab" aria-selected="false">Week 1: Aptitude &amp; Logic</button>
+          <button type="button" class="tab-btn" data-week="2" role="tab" aria-selected="false">Week 2: DSA &amp; Coding</button>
+          <button type="button" class="tab-btn" data-week="3" role="tab" aria-selected="false">Week 3: Core CS &amp; Web</button>
+          <button type="button" class="tab-btn" data-week="4" role="tab" aria-selected="false">Week 4: HR &amp; Mock Tests</button>
+        </div>
+
+        <!-- 20-Day Roadmap Grid -->
+        <div class="roadmap-grid" id="roadmap-grid">
+          
+          <!-- Day 1 -->
+          <div class="day-card" data-week="1">
+            <div class="day-header">
+              <span class="day-badge">Day 1</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="1" aria-label="Mark Day 1 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Quantitative: Numbers &amp; Percentages</h4>
+            <ul class="day-topics">
+              <li>Divisibility rules, LCM &amp; HCF shortcuts</li>
+              <li>Percentage to fraction conversion tricks</li>
+              <li>Solve 25 practice questions</li>
+            </ul>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="day-card" data-week="1">
+            <div class="day-header">
+              <span class="day-badge">Day 2</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="2" aria-label="Mark Day 2 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Profit, Loss &amp; Simple/Compound Interest</h4>
+            <ul class="day-topics">
+              <li>Cost price, selling price &amp; discount formulas</li>
+              <li>Compound interest annual &amp; semi-annual tricks</li>
+              <li>Practice 20 business math questions</li>
+            </ul>
+          </div>
+
+          <!-- Day 3 -->
+          <div class="day-card" data-week="1">
+            <div class="day-header">
+              <span class="day-badge">Day 3</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="3" aria-label="Mark Day 3 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Time, Speed, Distance &amp; Work</h4>
+            <ul class="day-topics">
+              <li>Trains, boats and streams problem types</li>
+              <li>Unitary method for pipes and cisterns</li>
+              <li>Solve 20 speed-distance challenges</li>
+            </ul>
+          </div>
+
+          <!-- Day 4 -->
+          <div class="day-card" data-week="1">
+            <div class="day-header">
+              <span class="day-badge">Day 4</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="4" aria-label="Mark Day 4 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Logical Reasoning: Blood Relations &amp; Coding</h4>
+            <ul class="day-topics">
+              <li>Family tree diagram representation</li>
+              <li>Letter coding, substitution &amp; number series</li>
+              <li>Solve 30 logical deduction puzzles</li>
+            </ul>
+          </div>
+
+          <!-- Day 5 -->
+          <div class="day-card" data-week="1">
+            <div class="day-header">
+              <span class="day-badge">Day 5</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="5" aria-label="Mark Day 5 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Verbal Ability &amp; Reading Comprehension</h4>
+            <ul class="day-topics">
+              <li>Subject-verb agreement &amp; error spotting</li>
+              <li>Sentence correction &amp; paragraph jumbles</li>
+              <li>Read 2 editorial passages + practice MCQs</li>
+            </ul>
+          </div>
+
+          <!-- Day 6 -->
+          <div class="day-card" data-week="2">
+            <div class="day-header">
+              <span class="day-badge">Day 6</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="6" aria-label="Mark Day 6 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Arrays, Strings &amp; Two-Pointer Technique</h4>
+            <ul class="day-topics">
+              <li>Time &amp; space complexity basics (Big-O)</li>
+              <li>Reverse string, palindromes &amp; anagrams</li>
+              <li>Two-sum and sliding window fundamentals</li>
+            </ul>
+          </div>
+
+          <!-- Day 7 -->
+          <div class="day-card" data-week="2">
+            <div class="day-header">
+              <span class="day-badge">Day 7</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="7" aria-label="Mark Day 7 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Searching &amp; Sorting Algorithms</h4>
+            <ul class="day-topics">
+              <li>Binary search variations (first/last occurrence)</li>
+              <li>Merge sort &amp; Quick sort mechanisms</li>
+              <li>Search in rotated sorted array</li>
+            </ul>
+          </div>
+
+          <!-- Day 8 -->
+          <div class="day-card" data-week="2">
+            <div class="day-header">
+              <span class="day-badge">Day 8</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="8" aria-label="Mark Day 8 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Linked Lists: Singly &amp; Doubly</h4>
+            <ul class="day-topics">
+              <li>Node creation, insertion and deletion</li>
+              <li>Reverse a linked list (iterative &amp; recursive)</li>
+              <li>Detect cycle using Floyd's Tortoise and Hare</li>
+            </ul>
+          </div>
+
+          <!-- Day 9 -->
+          <div class="day-card" data-week="2">
+            <div class="day-header">
+              <span class="day-badge">Day 9</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="9" aria-label="Mark Day 9 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Stacks &amp; Queues</h4>
+            <ul class="day-topics">
+              <li>Valid parentheses balance problem</li>
+              <li>Next greater element using monotonic stack</li>
+              <li>Implement queue using stacks</li>
+            </ul>
+          </div>
+
+          <!-- Day 10 -->
+          <div class="day-card" data-week="2">
+            <div class="day-header">
+              <span class="day-badge">Day 10</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="10" aria-label="Mark Day 10 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Trees &amp; Binary Search Trees (BST)</h4>
+            <ul class="day-topics">
+              <li>Inorder, preorder, postorder traversals</li>
+              <li>Height of binary tree &amp; diameter</li>
+              <li>Check if a tree is a valid BST</li>
+            </ul>
+          </div>
+
+          <!-- Day 11 -->
+          <div class="day-card" data-week="3">
+            <div class="day-header">
+              <span class="day-badge">Day 11</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="11" aria-label="Mark Day 11 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Object-Oriented Programming (OOP)</h4>
+            <ul class="day-topics">
+              <li>Encapsulation, Abstraction, Inheritance, Polymorphism</li>
+              <li>Method overloading vs method overriding</li>
+              <li>Abstract classes vs Interfaces</li>
+            </ul>
+          </div>
+
+          <!-- Day 12 -->
+          <div class="day-card" data-week="3">
+            <div class="day-header">
+              <span class="day-badge">Day 12</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="12" aria-label="Mark Day 12 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Database Management Systems (DBMS) &amp; SQL</h4>
+            <ul class="day-topics">
+              <li>ACID properties &amp; normalization (1NF to BCNF)</li>
+              <li>INNER, LEFT, RIGHT, FULL OUTER joins</li>
+              <li>Top SQL queries: Nth highest salary, GROUP BY</li>
+            </ul>
+          </div>
+
+          <!-- Day 13 -->
+          <div class="day-card" data-week="3">
+            <div class="day-header">
+              <span class="day-badge">Day 13</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="13" aria-label="Mark Day 13 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Operating Systems (OS) Concepts</h4>
+            <ul class="day-topics">
+              <li>Processes vs Threads, context switching</li>
+              <li>CPU scheduling algorithms (SJF, Round Robin)</li>
+              <li>Deadlocks (4 Coffman conditions) &amp; Virtual Memory</li>
+            </ul>
+          </div>
+
+          <!-- Day 14 -->
+          <div class="day-card" data-week="3">
+            <div class="day-header">
+              <span class="day-badge">Day 14</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="14" aria-label="Mark Day 14 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Computer Networks (CN)</h4>
+            <ul class="day-topics">
+              <li>OSI 7-layer model vs TCP/IP model</li>
+              <li>TCP vs UDP handshake differences</li>
+              <li>HTTP vs HTTPS, DNS lookup lifecycle, Subnetting</li>
+            </ul>
+          </div>
+
+          <!-- Day 15 -->
+          <div class="day-card" data-week="3">
+            <div class="day-header">
+              <span class="day-badge">Day 15</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="15" aria-label="Mark Day 15 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Projects &amp; System Architecture Deep Dive</h4>
+            <ul class="day-topics">
+              <li>Draft 2-minute elevator pitch for your major project</li>
+              <li>Identify challenges faced &amp; architecture decisions</li>
+              <li>Review Git branching &amp; deployment pipelines</li>
+            </ul>
+          </div>
+
+          <!-- Day 16 -->
+          <div class="day-card" data-week="4">
+            <div class="day-header">
+              <span class="day-badge">Day 16</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="16" aria-label="Mark Day 16 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">HR Round: Classic Behavioral Questions</h4>
+            <ul class="day-topics">
+              <li>"Tell me about yourself" 90-second framework</li>
+              <li>"What are your strengths and weaknesses?"</li>
+              <li>"Why should we hire you over other candidates?"</li>
+            </ul>
+          </div>
+
+          <!-- Day 17 -->
+          <div class="day-card" data-week="4">
+            <div class="day-header">
+              <span class="day-badge">Day 17</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="17" aria-label="Mark Day 17 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">STAR Method &amp; Conflict Resolution</h4>
+            <ul class="day-topics">
+              <li>Structure answers with Situation-Task-Action-Result</li>
+              <li>Describe a time you handled a difficult team member</li>
+              <li>Questions you must ask the interviewer at the end</li>
+            </ul>
+          </div>
+
+          <!-- Day 18 -->
+          <div class="day-card" data-week="4">
+            <div class="day-header">
+              <span class="day-badge">Day 18</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="18" aria-label="Mark Day 18 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Professional English &amp; Communication</h4>
+            <ul class="day-topics">
+              <li>Corporate email writing etiquettes</li>
+              <li>Eliminate filler words (um, uh, like, you know)</li>
+              <li>Practice mirror mock speaking session for 15 minutes</li>
+            </ul>
+          </div>
+
+          <!-- Day 19 -->
+          <div class="day-card" data-week="4">
+            <div class="day-header">
+              <span class="day-badge">Day 19</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="19" aria-label="Mark Day 19 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Full-Length Mock Placement Test</h4>
+            <ul class="day-topics">
+              <li>Timed 60-minute aptitude assessment test</li>
+              <li>2 medium coding challenges (60 minutes)</li>
+              <li>Analyze incorrect answers and refine speed</li>
+            </ul>
+          </div>
+
+          <!-- Day 20 -->
+          <div class="day-card" data-week="4">
+            <div class="day-header">
+              <span class="day-badge">Day 20</span>
+              <label class="day-checkbox-label">
+                <input type="checkbox" class="day-checkbox" data-day="20" aria-label="Mark Day 20 as completed">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <h4 class="day-title">Final Polish &amp; Mental Confidence</h4>
+            <ul class="day-topics">
+              <li>Review resume printouts &amp; key formulas</li>
+              <li>Dress code, body language &amp; posture check</li>
+              <li>Rest well and enter the interview with confidence</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 5. MODULE 2: APTITUDE PRACTICE LAB                                   -->
+    <!-- ==================================================================== -->
+    <section class="section aptitude-section" id="aptitude">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Module 2</span>
+          <h2 class="section-title">Interactive Aptitude Practice Lab</h2>
+          <p class="section-desc">Test your aptitude with campus placement MCQs. Receive instant feedback and explanations.</p>
+        </div>
+
+        <div class="quiz-card-wrapper">
+          
+          <div class="quiz-controls-bar">
+            <!-- Category Selector -->
+            <div class="quiz-categories" role="group" aria-label="Aptitude category selector">
+              <button type="button" class="quiz-cat-btn active" data-category="quant">Quantitative</button>
+              <button type="button" class="quiz-cat-btn" data-category="logical">Logical Reasoning</button>
+              <button type="button" class="quiz-cat-btn" data-category="verbal">Verbal Ability</button>
+            </div>
+
+            <!-- Real-Time Score Counter -->
+            <div class="quiz-score-badge">
+              <span>Score: </span>
+              <strong id="quiz-score-display">0 / 0</strong>
+            </div>
+          </div>
+
+          <!-- Question Box Container -->
+          <div class="quiz-body" id="quiz-body">
+            <div class="question-header">
+              <span class="question-number" id="question-number">Question 1 of 5</span>
+              <span class="question-topic" id="question-topic">Topic: Percentages &amp; Ratios</span>
+            </div>
+
+            <h3 class="question-text" id="question-text">
+              A student scores 35% marks and fails by 15 marks. Another student scores 45% marks and gets 25 marks more than the minimum passing marks. What are the maximum marks of the examination?
+            </h3>
+
+            <!-- Options Container -->
+            <div class="options-grid" id="options-grid">
+              <button type="button" class="option-btn" data-index="0">A) 350</button>
+              <button type="button" class="option-btn" data-index="1">B) 400</button>
+              <button type="button" class="option-btn" data-index="2">C) 450</button>
+              <button type="button" class="option-btn" data-index="3">D) 500</button>
+            </div>
+
+            <!-- Instant Feedback Box (Hidden initially) -->
+            <div class="quiz-feedback" id="quiz-feedback" style="display: none;">
+              <div class="feedback-status" id="feedback-status"></div>
+              <p class="feedback-explanation" id="feedback-explanation"></p>
+            </div>
+
+            <!-- Quiz Navigation -->
+            <div class="quiz-footer">
+              <button type="button" class="btn btn-outline btn-sm" id="quiz-reset-btn">Reset Quiz</button>
+              <button type="button" class="btn btn-primary btn-sm" id="quiz-next-btn">Next Question &rarr;</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 6. MODULE 3: TECHNICAL INTERVIEW PREPARATION                          -->
+    <!-- ==================================================================== -->
+    <section class="section technical-section" id="technical">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Module 3</span>
+          <h2 class="section-title">Core Technical Interview Hub</h2>
+          <p class="section-desc">Review high-yield questions asked in technical rounds at top product and service IT companies.</p>
+        </div>
+
+        <!-- Tech Topics Tabs -->
+        <div class="tech-tabs-list" role="tablist">
+          <button type="button" class="tech-tab-btn active" data-subject="dsa">Data Structures &amp; Algorithms</button>
+          <button type="button" class="tech-tab-btn" data-subject="dbms">DBMS &amp; SQL</button>
+          <button type="button" class="tech-tab-btn" data-subject="os">Operating Systems</button>
+          <button type="button" class="tech-tab-btn" data-subject="cn">Computer Networks</button>
+          <button type="button" class="tech-tab-btn" data-subject="web">Web &amp; Python/Java</button>
+        </div>
+
+        <!-- Expandable Question Accordions Container -->
+        <div class="accordion-container" id="technical-accordion">
+          
+          <details class="accordion-item" open>
+            <summary class="accordion-header">
+              <span class="q-badge">DSA</span>
+              <span class="q-title">What is the difference between an Array and a Linked List in memory and access time?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="accordion-content">
+              <p><strong>Memory Layout:</strong> Arrays store elements in contiguous (adjacent) memory blocks. Linked lists allocate memory dynamically for individual nodes scattered throughout the heap, linked together using pointers.</p>
+              <p><strong>Time Complexities:</strong></p>
+              <ul>
+                <li><strong>Access by Index:</strong> Array is O(1) constant time; Linked List is O(N) linear time.</li>
+                <li><strong>Insertion at Beginning:</strong> Array is O(N) due to shifting elements; Linked List is O(1) by updating head pointer.</li>
+                <li><strong>Memory Overhead:</strong> Arrays have zero pointer overhead; Linked lists require extra memory per node for storing pointers (4 or 8 bytes).</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-header">
+              <span class="q-badge">DSA</span>
+              <span class="q-title">Explain the two-pointer approach and where it is most effectively applied.</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="accordion-content">
+              <p>The two-pointer technique uses two pointers that traverse a data structure (typically a sorted array or linked list) simultaneously, either in the same direction or from opposite ends.</p>
+              <p><strong>Common Applications:</strong></p>
+              <ul>
+                <li><strong>Pair Sum in Sorted Array:</strong> Left pointer starts at 0, right pointer starts at N-1. If sum is smaller than target, increment left; if larger, decrement right. Reduces O(N²) brute-force to O(N).</li>
+                <li><strong>Detecting Cycles:</strong> Floyd's Tortoise and Hare algorithm uses a slow pointer (1 step) and fast pointer (2 steps) to detect cycles in O(N) time and O(1) space.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-header">
+              <span class="q-badge">DBMS</span>
+              <span class="q-title">What are ACID properties in a Relational Database? Give a real-world banking example.</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="accordion-content">
+              <p>ACID guarantees that database transactions are processed reliably:</p>
+              <ul>
+                <li><strong>Atomicity:</strong> "All or nothing". If money is debited from Account A, it must be credited to Account B. If the server crashes midway, the debit is rolled back completely.</li>
+                <li><strong>Consistency:</strong> The database must transition from one valid state to another, satisfying all constraints (e.g. Account balance cannot drop below zero).</li>
+                <li><strong>Isolation:</strong> Concurrent transactions run independently without interfering with each other (e.g. Two people withdrawing from the same joint account at the same second).</li>
+                <li><strong>Durability:</strong> Once a transaction commits, the record is permanently written to non-volatile storage and survives power failures.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-header">
+              <span class="q-badge">OS</span>
+              <span class="q-title">What is a Deadlock and what are the four Coffman conditions necessary for a deadlock to occur?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="accordion-content">
+              <p>A deadlock is a situation where two or more processes are permanently blocked because each process holds a resource and waits for another resource held by another process.</p>
+              <p><strong>The 4 Coffman Conditions:</strong></p>
+              <ol>
+                <li><strong>Mutual Exclusion:</strong> At least one resource must be held in a non-shareable mode.</li>
+                <li><strong>Hold and Wait:</strong> A process holds at least one resource while requesting additional resources.</li>
+                <li><strong>No Preemption:</strong> Resources cannot be forcibly confiscated from a process; they must be released voluntarily.</li>
+                <li><strong>Circular Wait:</strong> A closed chain of processes exists such that each process holds one resource needed by the next process in the chain.</li>
+              </ol>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 7. MODULE 4: HR INTERVIEW & ENGLISH COMMUNICATION                    -->
+    <!-- ==================================================================== -->
+    <section class="section hr-section" id="hr-interview">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Module 4</span>
+          <h2 class="section-title">HR Interview Preparation &amp; Communication Drills</h2>
+          <p class="section-desc">Master behavioral rounds using the industry-standard STAR framework, and refine your workplace communication.</p>
+        </div>
+
+        <div class="hr-dual-grid">
+          
+          <!-- Column 1: The STAR Framework Guide -->
+          <div class="hr-card">
+            <div class="card-badge-header">
+              <span class="badge-icon" aria-hidden="true">⭐</span>
+              <h3>The STAR Response Framework</h3>
+            </div>
+            <p class="card-intro">Use this 4-step structure to answer behavioral questions like "Describe a challenge you faced" or "Tell me about a team conflict".</p>
+            
+            <div class="star-steps">
+              <div class="star-step">
+                <span class="star-letter">S</span>
+                <div>
+                  <strong>Situation:</strong> Set the context. Briefly state the background, company or college project, and team size.
+                </div>
+              </div>
+              <div class="star-step">
+                <span class="star-letter">T</span>
+                <div>
+                  <strong>Task:</strong> Explain your specific responsibility or problem that needed to be resolved.
+                </div>
+              </div>
+              <div class="star-step">
+                <span class="star-letter">A</span>
+                <div>
+                  <strong>Action:</strong> Detail the concrete steps <em>you</em> personally took. Mention tools, leadership, or code solutions.
+                </div>
+              </div>
+              <div class="star-step">
+                <span class="star-letter">R</span>
+                <div>
+                  <strong>Result:</strong> Share the quantifiable outcome (e.g., "reduced latency by 30%", "received top grade", "delivered 2 days early").
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Classic HR Questions with Model Answers -->
+          <div class="hr-card">
+            <div class="card-badge-header">
+              <span class="badge-icon" aria-hidden="true">💼</span>
+              <h3>Top HR Questions &amp; Winning Strategies</h3>
+            </div>
+
+            <div class="hr-q-list">
+              <div class="hr-q-item">
+                <h4 class="hr-q-title">1. "Tell me about yourself."</h4>
+                <p class="hr-q-tip"><strong>Formula (Present-Past-Future):</strong> Who you are (degree, specialization), key technical accomplishments or projects, and why this specific company aligns with your career goals. Keep it strictly under 90 seconds.</p>
+              </div>
+
+              <div class="hr-q-item">
+                <h4 class="hr-q-title">2. "What is your greatest weakness?"</h4>
+                <p class="hr-q-tip"><strong>Winning Strategy:</strong> Pick a real professional area that isn't fatal to the job, and show the active steps you are taking to overcome it (e.g., "I used to hesitate speaking in large groups, so I joined our college debate club and took public speaking seminars").</p>
+              </div>
+
+              <div class="hr-q-item">
+                <h4 class="hr-q-title">3. "Do you have any questions for us?"</h4>
+                <p class="hr-q-tip"><strong>Winning Strategy:</strong> Never say "No". Ask: <em>"What does a typical onboarding trajectory look like for a graduate engineer on your team?"</em> or <em>"What technologies is the team planning to adopt over the next year?"</em></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 8. MODULE 5: RESUME IMPROVEMENT ASSISTANT                            -->
+    <!-- ==================================================================== -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Module 5</span>
+          <h2 class="section-title">ATS Resume Improvement Assistant</h2>
+          <p class="section-desc">80% of resumes are rejected by Automated Tracking Systems (ATS) before an HR recruiter reads them. Audit yours right now.</p>
+        </div>
+
+        <div class="resume-checker-layout">
+          
+          <!-- Left: Interactive ATS Checklist -->
+          <div class="resume-checklist-card">
+            <div class="checklist-header">
+              <h3>Interactive ATS Score Checklist</h3>
+              <div class="resume-score-pill">
+                <span>ATS Readiness: </span>
+                <strong id="resume-score-number">0%</strong>
+              </div>
+            </div>
+            <p class="checklist-sub">Tick the items that your resume currently satisfies to calculate your score:</p>
+
+            <div class="checklist-items" id="resume-checklist">
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="10">
+                <span class="check-box"></span>
+                <span class="check-text">Clean, single-column formatting (No tables, textboxes, or multi-column layouts)</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="10">
+                <span class="check-box"></span>
+                <span class="check-text">Standard contact header: Full name, phone, professional email, LinkedIn &amp; GitHub links</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="10">
+                <span class="check-box"></span>
+                <span class="check-text">Clear standard section headings: Education, Skills, Projects, Experience, Certifications</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="15">
+                <span class="check-box"></span>
+                <span class="check-text">Quantifiable project metrics included (e.g., "improved speed by 25%", "serves 500+ users")</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="15">
+                <span class="check-box"></span>
+                <span class="check-text">Every project bullet starts with a strong action verb (Engineered, Architected, Automated)</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="10">
+                <span class="check-box"></span>
+                <span class="check-text">Technical skills categorized neatly (Languages, Frameworks, Developer Tools, Databases)</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="10">
+                <span class="check-box"></span>
+                <span class="check-text">Saved as a searchable text PDF (Not an image scan or graphical screenshot)</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="10">
+                <span class="check-box"></span>
+                <span class="check-text">Strictly 1 single page for undergraduate college placement applications</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="resume-check" data-weight="10">
+                <span class="check-box"></span>
+                <span class="check-text">Zero spelling, punctuation, or grammatical errors</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Right: Power Action Verb Bank & Tips -->
+          <div class="resume-verbs-card">
+            <h3>High-Impact Resume Action Verbs</h3>
+            <p class="verb-sub">Replace weak verbs like <em>"worked on"</em> or <em>"responsible for"</em> with these powerful power words:</p>
+
+            <div class="verb-category">
+              <span class="verb-category-title">Development &amp; Engineering:</span>
+              <div class="verb-tags">
+                <span class="verb-pill">Architected</span>
+                <span class="verb-pill">Engineered</span>
+                <span class="verb-pill">Automated</span>
+                <span class="verb-pill">Constructed</span>
+                <span class="verb-pill">Deployed</span>
+                <span class="verb-pill">Refactored</span>
+                <span class="verb-pill">Optimized</span>
+              </div>
+            </div>
+
+            <div class="verb-category">
+              <span class="verb-category-title">Data &amp; Problem Solving:</span>
+              <div class="verb-tags">
+                <span class="verb-pill">Analyzed</span>
+                <span class="verb-pill">Modeled</span>
+                <span class="verb-pill">Extracted</span>
+                <span class="verb-pill">Audited</span>
+                <span class="verb-pill">Diagnosed</span>
+                <span class="verb-pill">Resolved</span>
+              </div>
+            </div>
+
+            <div class="verb-category">
+              <span class="verb-category-title">Leadership &amp; Collaboration:</span>
+              <div class="verb-tags">
+                <span class="verb-pill">Spearheaded</span>
+                <span class="verb-pill">Orchestrated</span>
+                <span class="verb-pill">Coordinated</span>
+                <span class="verb-pill">Mentored</span>
+                <span class="verb-pill">Standardized</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 9. MODULE 6: STUDENT PLACEMENT READINESS TRACKER                     -->
+    <!-- ==================================================================== -->
+    <section class="section tracker-section" id="tracker">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Module 6</span>
+          <h2 class="section-title">Student Placement Readiness Tracker</h2>
+          <p class="section-desc">Your consolidated placement preparation dashboard. Saved automatically in your browser's LocalStorage.</p>
+        </div>
+
+        <div class="tracker-dashboard">
+          
+          <!-- Master Readiness Gauge -->
+          <div class="tracker-hero-card">
+            <div class="readiness-circle-wrapper">
+              <div class="readiness-circle">
+                <span class="readiness-number" id="overall-readiness-percent">0%</span>
+                <span class="readiness-caption">Placement Readiness</span>
+              </div>
+            </div>
+            <div class="readiness-summary">
+              <h3 id="readiness-status-heading">Status: Getting Started</h3>
+              <p id="readiness-status-desc">Complete daily roadmap tasks, practice aptitude questions, and audit your resume to elevate your placement readiness score!</p>
+              <button type="button" class="btn btn-outline btn-sm" id="reset-all-progress-btn">Reset All Progress</button>
+            </div>
+          </div>
+
+          <!-- Component Breakdown Progress Bars -->
+          <div class="tracker-breakdown-grid">
+            
+            <div class="metric-card">
+              <div class="metric-header">
+                <span class="metric-title">20-Day Roadmap Completed</span>
+                <span class="metric-val" id="metric-roadmap-val">0 / 20 Days</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="metric-roadmap-bar" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-header">
+                <span class="metric-title">Aptitude Practice Accuracy</span>
+                <span class="metric-val" id="metric-aptitude-val">0%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="metric-aptitude-bar" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-header">
+                <span class="metric-title">Resume ATS Score</span>
+                <span class="metric-val" id="metric-resume-val">0%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="metric-resume-bar" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-header">
+                <span class="metric-title">AI Chatbot Consultations</span>
+                <span class="metric-val" id="metric-chat-val">Active &amp; Ready</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="metric-chat-bar" style="width: 100%;"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================== -->
+  <!-- 10. SITE FOOTER                                                        -->
+  <!-- ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">PlacementGenie</span>
+        <p class="footer-desc">Your Smart Academic &amp; Career Assistant for College Campus Placements.</p>
+        <span class="assignment-badge">College Assignment: "Build and Deploy Your Own Chatbot"</span>
+      </div>
+      <div class="footer-links-group">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#planner">20-Day Roadmap</a></li>
+          <li><a href="#aptitude">Aptitude Lab</a></li>
+          <li><a href="#technical">Technical Prep</a></li>
+          <li><a href="#hr-interview">HR Questions</a></li>
+          <li><a href="#resume">ATS Resume Checker</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 PlacementGenie. Built with HTML5, CSS3 &amp; Vanilla JavaScript. Zero External APIs.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================== -->
+  <!-- 11. FLOATING CHATBOT BUTTON & INTEGRATED CHATBOT PANEL                 -->
+  <!-- ====================================================================== -->
+  
+  <!-- Floating Launcher Button (Always visible at bottom-right corner) -->
+  <div class="chat-widget-launcher-wrapper">
+    <button type="button" class="chat-launcher-btn" id="chat-launcher-btn" aria-label="Open PlacementGenie AI Assistant" aria-expanded="false">
+      <span class="launcher-icon-chat" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </span>
+      <span class="launcher-icon-close" aria-hidden="true" style="display: none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </span>
+      <span class="launcher-tooltip">Ask PlacementGenie AI ✨</span>
+    </button>
+  </div>
+
+  <!-- Floating Chatbot Window / Panel -->
+  <div class="chat-widget-panel" id="chat-widget-panel" aria-hidden="true" role="dialog" aria-label="PlacementGenie Chatbot Assistant">
+    
+    <!-- Chat Window Header -->
+    <div class="chat-widget-header">
+      <div class="widget-header-brand">
+        <div class="widget-avatar-icon" aria-hidden="true">🧞‍♂️</div>
+        <div class="widget-title-area">
+          <h3 class="widget-title" id="active-chat-title">PlacementGenie AI</h3>
+          <span class="widget-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            Online &amp; Context-Aware
+          </span>
+        </div>
+      </div>
+      
+      <div class="widget-header-controls">
+        <button type="button" class="widget-ctrl-btn" id="restart-chat-btn" title="Restart conversation" aria-label="Restart conversation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="1 4 1 10 7 10"></polyline>
+            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+          </svg>
+        </button>
+        <button type="button" class="widget-ctrl-btn" id="close-chat-widget-btn" title="Minimize assistant" aria-label="Minimize assistant">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scrollable Chat Viewport -->
+    <div class="chat-widget-body" id="chat-viewport">
+      
+      <!-- Welcome Screen inside Widget -->
+      <div class="chat-welcome-box" id="welcome-screen">
+        <div class="bot-welcome-avatar" aria-hidden="true">🧞‍♂️</div>
+        <h4 class="welcome-heading">Hello, Future Engineer!</h4>
+        <p class="welcome-text">I am your AI placement mentor. Ask me about study timetables, aptitude tricks, coding roadmaps, or interview questions.</p>
+        
+        <!-- Suggested Quick Prompt Chips -->
+        <div class="quick-prompts-container" aria-label="Suggested questions">
+          <button type="button" class="prompt-chip" data-prompt="Create my 20-day placement study timetable">
+            📅 Create 20-day study timetable
+          </button>
+          <button type="button" class="prompt-chip" data-prompt="Quiz me on Aptitude Percentages">
+            🧠 Quiz me on Aptitude
+          </button>
+          <button type="button" class="prompt-chip" data-prompt="Give me a Python learning roadmap">
+            💻 Python coding roadmap
+          </button>
+          <button type="button" class="prompt-chip" data-prompt="How should I answer 'Tell me about yourself'?">
+            💼 HR: Tell me about yourself
+          </button>
+          <button type="button" class="prompt-chip" data-prompt="What are ACID properties in DBMS?">
+            🎯 Explain ACID properties
+          </button>
+          <button type="button" class="prompt-chip" data-prompt="Track my placement progress">
+            📊 Track my progress
+          </button>
+        </div>
+      </div>
+
+      <!-- Messages Stream -->
+      <div class="messages-container" id="messages-container">
+        <!-- Message bubbles populated by script.js -->
+      </div>
+
+      <!-- Animated Typing Indicator -->
+      <div class="typing-indicator" id="typing-indicator" aria-hidden="true">
+        <div class="bot-avatar-small" aria-hidden="true">🧞‍♂️</div>
+        <div class="typing-bubble">
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Chat Input Area -->
+    <div class="chat-widget-footer">
+      <form class="chat-form" id="chat-form" autocomplete="off">
+        <div class="input-wrapper">
+          <label for="user-input" class="sr-only">Type a message to PlacementGenie</label>
+          <textarea 
+            id="user-input" 
+            class="chat-textarea" 
+            placeholder="Ask anything (e.g. 'Day 5 plan', 'DSA roadmap')..." 
+            rows="1"
+            required></textarea>
+          
+          <button type="submit" class="send-btn" id="send-btn" aria-label="Send message">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div class="widget-subnote">
+        100% Private &amp; Client-Side &bull; Saved to LocalStorage
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Main JavaScript File (Stage 3/4 integration) -->
+  <script src="script.js" defer></script>
+</body>
+</html>
